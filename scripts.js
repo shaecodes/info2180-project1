@@ -1,27 +1,18 @@
-document.addEventListener("DOMContentLoaded", function() {
-    let newsletterForm = document.getElementById("newsletter-form");
-    let emailInput = document.getElementById("email");
-    let messageContainer = document.querySelector(".message");
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".newsletter form");
+    const messageDiv = document.querySelector(".message");
 
-    newsletterForm.addEventListener("submit", function(event) {
-        event.preventDefault(); 
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const emailInput = document.getElementById("email");
+      const email = emailInput.value.trim();
 
-        let email = emailInput.value.trim();
-        let message = document.createElement("div");
-        message.classList.add("message-text");
+      if (email !== "") {
+        messageDiv.innerHTML = `Thank you! Your email address <${email}> has been added to our mailing list!`;
+      } else {
+        messageDiv.innerHTML = "Please enter a valid email address.";
+      }
 
-        if (email === "") {
-            message.textContent = "Please enter a valid email address.";
-        } else {
-            message.textContent = "Thank you! Your email address " + email + " has been added to our mailing list!";
-        }
-
-        while (messageContainer.firstChild) {
-            messageContainer.removeChild(messageContainer.firstChild);
-        }
-
-        messageContainer.appendChild(message);
+      emailInput.value = "";
     });
-});
-
-
+  });
