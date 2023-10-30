@@ -1,7 +1,12 @@
-/* Add your CSS to this file */
 body {
     margin: 0;
-    font-size: 16px;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
+}
+
+main{
+    margin: 0;
 }
 
 .container {
@@ -9,3 +14,207 @@ body {
     max-width: 960px;
     width: 100%;
 }
+
+header{
+    background-color: white;
+    font-size: 18px;   
+}
+
+header .container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 0; 
+  }
+
+header nav ul li{
+    display: inline;
+    margin-right: 15px;
+}
+
+header h1 {
+  margin: 0; 
+  font-size: 18px;   
+}
+
+nav ul li a {
+    color: #6b7280;
+    text-decoration: none;
+    transition: color 0.3s; 
+
+  }
+  
+nav ul li a:hover {
+    color: #5A67D8; 
+}
+
+.overview-hero{
+    background-color: #E2E8F0;
+    height: 250px;
+    padding: 50px;
+}
+
+.overview-hero .container {
+    overflow: hidden; 
+}
+
+.overview-hero-image {
+    float: left; 
+    width: 30%; 
+}
+
+.overview-hero-image img {
+    width: 140%; 
+    height: auto; 
+}
+
+.overview-hero-text {
+    float: right; 
+    width: 70%; 
+}
+
+
+.learn-about h2{
+    font-size: 24px;
+    color:#48BB78;
+}
+
+.card{
+    border-color: #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+    padding: 10px 20px;
+}
+
+.card img {
+    width: 100%; 
+    height: auto; 
+}
+
+.cards{
+    display: flex;
+}
+
+.learn-about h3{
+    color: #48BB78;
+    font-size: 21px;
+}
+
+.testing{
+    background-color: #4A5568;
+    border-radius: 5px;
+    height: 250px;
+    padding: 50px;
+    margin-top: 1%;
+}
+
+.testing-description{
+    color: white;
+    float: left;
+    width: 70%;
+}
+
+.stories h2 {
+    color: #5A67D8; 
+}
+
+.cta{
+    float: right;
+    width: 30%;
+}
+
+.testing .btn{
+    color: white;
+    text-decoration: none;
+    background: #48BB78;
+    border-radius: 3px;
+    padding: 10px;
+    float: right;
+}
+
+.stories{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.stories article h3 {
+    font-size: 18px; 
+}
+
+
+.stories article p a {
+    color: #5A67D8; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.stories article img {
+    border-radius: 50%; 
+    float:left;
+    width:20%;
+}
+
+.article-body{
+    padding: 0 30%;
+    width:60%;
+    padding-bottom: 4%;
+}
+
+.newsletter {
+    background-color: #48BB78; 
+    color: white; 
+    height: 300px;
+    padding-top: 5%;
+}
+  
+.newsletter .btn {
+    color: white;
+    text-decoration: none;
+    background:  #5A67D8;
+    border-radius: 3px;
+    padding: 15px 40px;
+    border: none;
+}
+
+.newsletter .container{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto; 
+    float: left;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 30px; 
+}
+
+
+#email {
+    padding: 15px; 
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 300px;
+}
+
+footer {
+    background-color: #4A5568;
+    color: white;
+    height: 75px;
+    padding: 20px;
+}
+
+
+
+  
+  
